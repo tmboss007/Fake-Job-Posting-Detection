@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Job Detection AI | Machine Learning System</title>
+    <meta name="description" content="An advanced Machine Learning system designed to identify fraudulent job postings using Natural Language Processing and ensemble models.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="gradient-text">TrustAI</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#demo" class="btn-primary">Try Demo</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">v1.0 Production Ready</div>
+            <h1 class="hero-title">Detect <span class="gradient-text">Fraudulent Job</span> Postings with AI</h1>
+            <p class="hero-subtitle">An end-to-end Machine Learning system leveraging Natural Language Processing and Random Forest classification to protect job seekers from online scams.</p>
+            <div class="hero-cta">
+                <a href="#demo" class="btn-primary">Live Demonstration</a>
+                <a href="#about" class="btn-secondary">Explore Architecture</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="glass-panel main-panel">
+                <div class="panel-header">
+                    <div class="dot red"></div>
+                    <div class="dot yellow"></div>
+                    <div class="dot green"></div>
+                </div>
+                <div class="panel-body">
+                    <div class="code-line w-80"></div>
+                    <div class="code-line w-60"></div>
+                    <div class="code-line w-90"></div>
+                    <div class="code-line w-40"></div>
+                    <div class="analysis-box">
+                        <span class="scanning">Scanning text patterns...</span>
+                        <div class="result-pill safe">98% Legitimate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="glass-panel float-panel-1">
+                <span class="icon">📈</span>
+                <div>
+                    <h4>Accuracy</h4>
+                    <p>High F1-Score</p>
+                </div>
+            </div>
+            <div class="glass-panel float-panel-2">
+                <span class="icon">🔍</span>
+                <div>
+                    <h4>TF-IDF</h4>
+                    <p>Vectorization</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>Project Overview</h2>
+            <p>Built to tackle the growing problem of job scams on online platforms.</p>
+        </div>
+        <div class="grid cards-grid">
+            <div class="glass-card">
+                <div class="card-icon">📊</div>
+                <h3>The Dataset</h3>
+                <p>Trained on a comprehensive dataset containing both structured metadata (company size, industry) and unstructured text (descriptions, requirements).</p>
+                <div class="stat-row">
+                    <span>Legitimate: 67%</span>
+                    <span>Fraudulent: 33%</span>
+                </div>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon">🧠</div>
+                <h3>NLP Processing</h3>
+                <p>Implemented advanced text cleaning, stop-word removal, and lemmatization using NLTK before transforming text into numerical vectors via TF-IDF.</p>
+            </div>
+            <div class="glass-card">
+                <div class="card-icon">⚡</div>
+                <h3>Ensemble Models</h3>
+                <p>Compared multiple classification algorithms including Logistic Regression, Naive Bayes, Gradient Boosting, and a highly-tuned Random Forest.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="section dark-section">
+        <div class="section-header">
+            <h2>Key Findings & Metrics</h2>
+            <p>Our model goes beyond simple accuracy to minimize false positives.</p>
+        </div>
+        <div class="metrics-container">
+            <div class="metric-item">
+                <div class="circular-progress" style="--val: 88">
+                    <div class="inner-circle">88%</div>
+                </div>
+                <h4>Accuracy</h4>
+            </div>
+            <div class="metric-item">
+                <div class="circular-progress" style="--val: 83">
+                    <div class="inner-circle">83%</div>
+                </div>
+                <h4>F1-Score</h4>
+            </div>
+            <div class="metric-item">
+                <div class="feature-list">
+                    <h4>Top Predictive Features</h4>
+                    <ul>
+                        <li><span class="check">✓</span> Absence of Company Logo</li>
+                        <li><span class="check">✓</span> Red Flag Keywords (e.g., "easy money")</li>
+                        <li><span class="check">✓</span> Incomplete Job Requirements</li>
+                        <li><span class="check">✓</span> Unrealistic Salary Ranges</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="section">
+        <div class="section-header">
+            <h2>Interactive Demonstration</h2>
+            <p>Test the UI concept of our classification system.</p>
+        </div>
+        <div class="demo-container glass-card">
+            <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title" placeholder="e.g. Data Entry Clerk">
+            </div>
+            <div class="form-group">
+                <label for="job-desc">Job Description & Requirements</label>
+                <textarea id="job-desc" rows="6" placeholder="Paste the job description here..."></textarea>
+            </div>
+            <div class="demo-actions">
+                <button id="analyze-btn" class="btn-primary full-width">Analyze Posting</button>
+            </div>
+            
+            <div id="demo-result" class="demo-result hidden">
+                <div class="loader"></div>
+                <div class="result-content hidden">
+                    <h3 id="result-title">Analysis Complete</h3>
+                    <div id="result-score" class="score-badge">Loading...</div>
+                    <p id="result-text">Analyzing text patterns and structural metadata...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Fake Job Posting Detection AI. Built for Advanced ML Internship.</p>
+            <div class="social-links">
+                <a href="#">GitHub Repository</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
