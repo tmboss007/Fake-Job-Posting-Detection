@@ -53,5 +53,6 @@ The dataset contains information about job postings, including structured data (
 - The model relies heavily on historical data patterns; highly sophisticated and new forms of fraud might bypass the initial filters.
 - Imbalanced dataset considerations required careful metric selection (F1-Score and ROC-AUC rather than raw accuracy).
 
-## 🧑‍💻 Author
+## 🧑‍💻 Developer
+Sathwik R Udupi
 Built as part of an Advanced AI/ML Internship.
