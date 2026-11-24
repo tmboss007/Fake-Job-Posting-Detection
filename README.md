@@ -49,6 +49,8 @@ The dataset contains information about job postings, including structured data (
    ```
 5. Run all cells to see the data preprocessing, training, and evaluation in action.
 
+refferal code - Q4NP2S
+
 ## 📈 Limitations
 - The model relies heavily on historical data patterns; highly sophisticated and new forms of fraud might bypass the initial filters.
 - Imbalanced dataset considerations required careful metric selection (F1-Score and ROC-AUC rather than raw accuracy).
